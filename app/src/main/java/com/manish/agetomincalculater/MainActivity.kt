@@ -17,8 +17,7 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
 
       private var tvSelected : TextView? = null
-
-    private var tvMinutes: TextView? = null
+      private var tvMinutes: TextView? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -39,7 +38,7 @@ class MainActivity : AppCompatActivity() {
          val month = myCalendar.get(Calendar.MONTH)
          val day = myCalendar.get(Calendar.DAY_OF_MONTH)
          val dpd = DatePickerDialog(this,
-             DatePickerDialog.OnDateSetListener{_x  ,selectedYear,selectedMonth,
+             DatePickerDialog.OnDateSetListener{_,selectedYear,selectedMonth,
                                                 selectedDayOfMonth->
                  Toast.makeText(this,
                      "Year $selectedYear , month ${selectedMonth+1}"+
